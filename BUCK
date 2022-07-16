@@ -1,6 +1,9 @@
 cxx_binary(
   name = 'demo',
   header_namespace = 'demo',
+  compiler_flags = [ 
+    '-std=c++17', 
+  ], 
   headers = subdir_glob([
     ('demo/include', '**/*.hpp'),
   ]),
@@ -9,5 +12,6 @@ cxx_binary(
   ]),
   deps = [
     '//mathutils:mathutils',
+    ':folly'
   ],
 )

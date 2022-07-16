@@ -1,3 +1,6 @@
 [submodule "googletest"]
 	path = googletest
 	url = git@github.com:njlr/googletest.git
+[submodule "folly"]
+	path = folly
+	url = https://github.com/facebook/folly
